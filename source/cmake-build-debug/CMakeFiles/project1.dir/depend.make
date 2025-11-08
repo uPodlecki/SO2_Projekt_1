@@ -4,9 +4,7 @@
 CMakeFiles/project1.dir/heap.c.o: \
  ../custom_unistd.h \
  ../heap.c \
- ../heap.h \
- ../rdebug.h \
- ../tested_declarations.h
+ ../heap.h
 CMakeFiles/project1.dir/main.c.o: \
  ../custom_unistd.h \
  ../heap.h \

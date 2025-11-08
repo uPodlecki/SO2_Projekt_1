@@ -6,12 +6,11 @@
 # Znacznik czasowy: 2024-11-10 13:45:49.281268
 #
 
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.13)
 project(project1 C)
 
 # Przyjmij standard C11
 set(CMAKE_C_STANDARD 11)
-
 # Ustaw opcje kompilatora (z raportu Dante)
 add_compile_options(
       "-Wno-parentheses"
@@ -49,5 +48,4 @@ add_executable(project1
 )
 
 # Dołącz niezbędne biblioteki
-target_link_libraries(project1
-)
+target_link_libraries(project1 PRIVATE pthread "-Wl,--wrap=main")
